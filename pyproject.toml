@@ -2,7 +2,7 @@
 requires=["setuptools>=69"]
 build-backend="setuptools.build_meta"
 [project]
-name="lithotwin-ai-tcad"
+name="lithotwin-computational-lithography"
 version="1.0.0"
 description="Conditional neural surrogate for reduced-order computational lithography"
 requires-python=">=3.10"
