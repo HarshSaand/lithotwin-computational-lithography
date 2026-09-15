@@ -1,5 +1,12 @@
 # LithoTwin - AI-Accelerated Computational Lithography
 
+## Inspect an actual model output
+
+![Mask, simulated reference and model prediction](docs/output-showcase.png)
+
+Saved test prediction panel: mask input, simulator reference and learned resist prediction. Simulator-backed computational study, not a fabricated-wafer image. See [figure source](outputs/figures/prediction_panel.png) and [setup instructions](#run-on-macoslinux). After setup, `python scripts/make_figures.py` regenerates this panel from the saved checkpoint and dataset. It selects test index `ids[len(ids)//3]` deterministically; “representative” is a figure label, not a statistical sampling claim. The showcase is a copy of that saved figure.
+
+
 LithoTwin asks a computational-lithography question: **can a compact neural model reproduce a simulated resist pattern from a mask and its exposure conditions, and where does that approximation fail?** It trains a conditional U-Net to predict developed resist contours from a binary mask, dose, defocus, numerical aperture and resist threshold.
 
 The reference labels come from a transparent scalar Fourier-optics simulator, not measured wafers or experimental fab data. The saved in-distribution test report records **0.9019 IoU and 0.9285 Dice on 252 synthetic clips**, but the recorded out-of-distribution scores are substantially weaker. The recorded CPU timing also does **not** demonstrate a speedup over the simulator. This is an educational surrogate-modeling prototype, not production lithography, optical proximity correction (OPC), or a chemically amplified resist solver.

@@ -1,0 +1,5 @@
+{
+  "figure": "outputs/figures/prediction_panel.png",
+  "source": "Existing saved model test prediction panel",
+  "scope": "Simulated resist-contour prediction, not SEM imagery or fab validation"
+}
