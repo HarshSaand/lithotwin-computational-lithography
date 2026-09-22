@@ -1,5 +1,7 @@
 # LithoTwin - AI-Accelerated Computational Lithography
 
+[Read the project report (PDF)](docs/PROJECT_REPORT.pdf) · [Explore the explanation and flow diagram](docs/PROJECT_REPORT.md)
+
 ## Inspect an actual model output
 
 ![Mask, simulated reference and model prediction](docs/output-showcase.png)
